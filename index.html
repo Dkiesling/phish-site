@@ -1,22 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sign in - Google Accounts</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Choose an account</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo" class="logo">
-        <h2>Sign in</h2>
-        <p>Use your Google Account</p>
-        <form id="loginForm" action="#" method="POST">
-            <input type="email" name="username" placeholder="Email or phone" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Next</button>
-        </form>
-    </div>
-    <script src="script.js"></script>
+  <div class="google-login-page">
+    <!-- Header -->
+    <header class="google-header">
+      <img
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png"
+        alt="Google Logo"
+        class="google-logo"
+      />
+    </header>
+
+    <!-- Main Container -->
+    <main class="google-container">
+      <h1 class="choose-account">Choose an account</h1>
+
+      <!-- Account List -->
+      <div class="account-list">
+        <!-- Account Item #1 -->
+        <div class="account-item">
+          <img
+            src="https://via.placeholder.com/40"
+            alt="Profile"
+            class="account-avatar"
+          />
+          <div class="account-details">
+            <div class="account-name">Name One</div>
+            <div class="account-status">Signed out</div>
+          </div>
+        </div>
+
+        <!-- Account Item #2 -->
+        <div class="account-item">
+          <img
+            src="https://via.placeholder.com/40"
+            alt="Profile"
+            class="account-avatar"
+          />
+          <div class="account-details">
+            <div class="account-name">Name Two</div>
+            <div class="account-status">Signed out</div>
+          </div>
+        </div>
+
+        <!-- Account Item #3 -->
+        <div class="account-item">
+          <img
+            src="https://via.placeholder.com/40"
+            alt="Profile"
+            class="account-avatar"
+          />
+          <div class="account-details">
+            <div class="account-name">Name Three</div>
+            <div class="account-status">Signed out</div>
+          </div>
+        </div>
+
+        <!-- Add as many as you need -->
+
+        <!-- Use Another Account -->
+        <div class="account-item account-action">
+          <div class="account-details">
+            <div class="account-name">Use another account</div>
+          </div>
+        </div>
+
+        <!-- Remove an account -->
+        <div class="account-item account-action">
+          <div class="account-details">
+            <div class="account-name">Remove an account</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="google-footer">
+      <div class="footer-left">
+        <span>English (United States)</span>
+      </div>
+      <div class="footer-right">
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
